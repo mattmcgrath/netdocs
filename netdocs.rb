@@ -61,9 +61,9 @@ module NetDocs
 		
 		#Save base64 document data to a file
 		def self.write
-			File.open('shipping_label.gif', 'wb') do|f|
-  				f.write(Base64.decode64(base_64_encoded_data))
-			end
+			#File.open('shipping_label.gif', 'wb') do|f|
+  				#f.write(Base64.decode64(base_64_encoded_data))
+			#end
 		end
 	end
 
@@ -76,6 +76,3 @@ module NetDocs
 	class Workspace < StorageObject
 	end
 end
-
-#sesh = NetDocs::Session.new("matt.mcgrath","ND4work")
-#results = sesh.storage.search("2080 - NFHS Network - Checklist")
